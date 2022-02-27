@@ -1,12 +1,18 @@
 <Page navigatingTo="onNavigatingTo" xmlns="http://schemas.nativescript.org/tns.xsd">
     <ActionBar>
-        <Label text="Senzor svjetline" />
+        <Label text="Senzori" />
     </ActionBar>
 
     <GridLayout>
-        <GridLayout rows="30, 30, 30" columns="20, *, 20">
+        <GridLayout rows="30, 30, 60, 30, 30, 60, 30, 30" columns="20, *, 20">
             <Label text="Očitanje senzora svjetla" row="0" col="1" backgroundColor="#92a8d1"></Label>
             <Label text="{{ lux }}" row="1" col="1" backgroundColor="#42b8d1"></Label>
+            <Label text="" row="2" col="1" backgroundColor="#ffffff"></Label>
+            <Label text="Očitanje magnetometra" row="3" col="1" backgroundColor="#92a8d1"></Label>
+            <Label text="{{ magnet }}" row="4" col="1" backgroundColor="#42b8d1"></Label>
+            <Label text="" row="5" col="1" backgroundColor="#ffffff"></Label>
+            <Label text="Očitanje senzora blizine" row="6" col="1" backgroundColor="#92a8d1"></Label>
+            <Label text="{{ proximity }}" row="7" col="1" backgroundColor="#42b8d1"></Label>
         </GridLayout>
     </GridLayout>
 </Page>
