@@ -1,12 +1,11 @@
 import { fromObject, Observable } from '@nativescript/core'
 import { ad as androidUtils } from "tns-core-modules/utils/utils";
-//import { AndroidSensors, AndroidSensorListener, SensorDelay } from 'nativescript-android-sensors';
 
 
 export function SensorViewModel() {
   const viewModel = new Observable()
 
-  const context = androidUtils.getApplicationContext();
+  var context = androidUtils.getApplicationContext();
   var sensorManager = context.getSystemService(android.content.Context.SENSOR_SERVICE);
 
   var lightSensor = sensorManager.getDefaultSensor(android.hardware.Sensor.TYPE_LIGHT);
